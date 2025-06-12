@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <center><h1>Login</h1></center>
+  <br>
+  <center>
+    <form action="./index.html" method="get" style="border: 2px solid black; padding: 10px; width: 300px; background-color: #f5f5f5; border-radius: 10px;">
+     
+      <label for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        placeholder="Enter your email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="Enter a valid email address like user@example.com"
+      ><br><br>
+
+      
+      <label for="password">Password:</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        required 
+        placeholder="Enter your password"
+        minlength="8"
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+        title="Password must have at least 1 uppercase, 1 lowercase, 1 number, 1 special character, and be at least 8 characters long"
+      ><br><br>
+
+      <input type="submit" value="Login"> <br> <br>
+      <a href="./fpswd.html"> forgot password☹️</a>
+    </form>
+  </center>
+</body>
+</html>
